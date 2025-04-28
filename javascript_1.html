@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+    /* ここにCSSを書いてください */
+    </style>
+  </head>
+  <body>
+    <!-- ここにHTMLを書いてください -->
+    <input id="textBox" type="text" />
+    <div id="output"></div>
+    <script type="text/javascript">
+      // ここにJavaScriptを書いてください
+      const textBox = document.querySelector("#textBox");
+const output = document.querySelector("#output");
+
+textBox.addEventListener("keydown", (event) => {
+  output.textContent = `"${event.key}" を押しました。`;
+});
+
+    </script>
+  </body>
+</html>
